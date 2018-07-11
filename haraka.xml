@@ -28,6 +28,7 @@
 		<language tag="nl-NL">language/nl-NL/nl-NL.plg_system_haraka.sys.ini</language>
 		<language tag="pt-BR">language/pt-BR/pt-BR.plg_system_haraka.ini</language>
 		<language tag="pt-BR">language/pt-BR/pt-BR.plg_system_haraka.sys.ini</language>
+		<language tag="ru-RU">language/ru-RU/ru-RU.plg_system_haraka.sys.ini</language>
 	</languages>
 	<media folder="media" destination="plg_haraka">
 		<folder>images</folder>
@@ -63,12 +64,23 @@
 			<fieldset name="display" label="PLG_SYSTEM_HARAKA_FIELDSET_DISPLAY">
 				<field
 					name="bgimage"
-					type="imagelist"
+					type="media"
 					default="comingsoon.jpg"
 					label="PLG_SYSTEM_HARAKA_CFG_IMAGE"
 					description="PLG_SYSTEM_HARAKA_CFG_IMAGE_DESC"
-					directory="media/plg_haraka/images"
+					directory=""
 				/>
+				<field
+						name="slidefolder"
+						type="folderlist"
+						default=""
+						label="PLG_SYSTEM_HARAKA_CFG_SLIDEFOLDER"
+						directory="images"
+						filter=""
+						exclude=""
+						stripext=""
+				/>
+				<field name="backvideo" type="url" default="http://youtube.com/..." label="LG_SYSTEM_HARAKA_CFG_BACKVIDEO" description="" size="10" />
 				<field
 					name="fonts"
 					type="list"
@@ -86,6 +98,16 @@
 					<option value="Playfair+Display|Alice">Playfair Display, Alice</option>
 					<option value="Roboto+Slab|Roboto">Roboto Slab, Roboto</option>
 				</field>
+				<field
+						name="templatefile"
+						type="filelist"
+						default="default"
+						label="Select a file"
+						description=""
+						directory="plugins/system/haraka/tmpl"
+						filter=""
+						exclude=""
+						stripext="" />
 			</fieldset>
 			<fieldset name="date" label="PLG_SYSTEM_HARAKA_FIELDSET_COUNTDOWN">
 				<field

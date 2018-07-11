@@ -80,7 +80,7 @@ class plgSystemHaraka extends JPlugin
 
 		if (!$this->displayHaraka)
 		{
-			$bgimageUrl     = JUri::base() . 'media/plg_haraka/images/' . $this->params->get('bgimage', 'comingsoon.jpg');
+			$bgimageUrl     = JUri::base() . $this->params->get('bgimage', 'comingsoon.jpg');
 			$caption        = $this->params->get('caption', '');
 			$countdown      = $this->params->get('countdown', 1);
 			$countdown_date = $this->params->get('countdown_date', '');
@@ -108,7 +108,10 @@ class plgSystemHaraka extends JPlugin
 			$twitter_url   = 'https://twitter.com/' . $twitter;
 			$youtube_url   = 'https://youtube.com/' . $youtube;
 
-			$path = JPluginHelper::getLayoutPath('system', 'haraka');
+            // Template file
+			$tmpl   = $this->params->get('templatefile', '');
+
+			$path = JPluginHelper::getLayoutPath('system', 'haraka', 'slideshow');
 			include $path;
 
 			$this->app->close();
