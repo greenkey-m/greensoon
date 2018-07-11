@@ -483,7 +483,7 @@ defined('_JEXEC') or die;
 
         .social_links li a {
             display: block;
-            padding: 4px 6px 8px 6px;
+            padding: 6px 6px 6px 6px;
             margin: 5px;
             color: white;
             width: 30px;
@@ -570,7 +570,7 @@ defined('_JEXEC') or die;
 
             .social_links li a {
                 display: block;
-                padding: 2px 3px 4px 3px;
+                padding: 3px 3px 3px 3px;
                 margin: 3px;
                 color: white;
                 width: 20px;
@@ -626,7 +626,7 @@ defined('_JEXEC') or die;
         <p>+7 (910) 6005-999, +7 (953) 3293-999</p>
         <p>info@greenkey.ru</p>
         <br/>
-        <a class="slide__text-link" href="http://greenkey.rpce.ru/">Полиграфия</a>
+        <a class="slide__text-link" href="http://greenkey.rpce.ru/">Полиграфия!</a>
         <a class="slide__text-link" href="http://greenkey.freshdesk.com/">Техподдержка</a>
         <a class="slide__text-link" href="http://reg.greenkey.ru/">Регистрация доменов</a>
         <div class="cf"></div>

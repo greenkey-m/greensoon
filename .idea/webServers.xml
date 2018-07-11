@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3d56b8f3-6064-4e7e-ab2d-d856b41e8c95" name="92.63.105.168" url="http://greenkey.ru">
+        <fileTransfer host="92.63.105.168" port="21" rootFolder="/www/greenkey.ru/plugins/system/haraka">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
