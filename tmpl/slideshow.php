@@ -23,13 +23,22 @@ defined('_JEXEC') or die;
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Fullscreen Background Image Slideshow with CSS3</title>
+    <title>Greenkey studio-school :-)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-          content="Fullscreen Background Image Slideshow with CSS3 - A Css-only fullscreen background image slideshow"/>
-    <meta name="keywords" content="css3, css-only, fullscreen, background, slideshow, images, content"/>
+          content="Школа-студия Greenkey: программирование, создание/разработка сайтов и программ, дизайн, реклама, рекламные ролики. Обслуживание компьютеров для физлиц и организаций, хостинг и администрирование сайтов.
+          Компьютерные курсы для детей и взрослых. Светодиодные уличные экраны. Полиграфическая продукция, печать."/>
+    <meta name="keywords" content="портфолио, web дизайн портфолио, сайт визитка, web дизайн, web дизайн корпоративных сайтов, лучший web дизайн, web дизайн услуги, html, дизайн web страниц,
+    разработка фирменного стиля, разработка корпоративного стиля, анимация и дизайн, создание роликов, рекламных баннеров, рекламные ролики, видеоролик, цена ролик сайт дизайн, виртуальный тур,
+    создание виртуального 3d тура, заказать виртуальный тур, виртуальный тур недорого, виртуальная панорама, Малоярославец, Обнинск, Жуков, Боровск, Балабаново, Калужская область,
+    создание корпоративного сайта, создание мобильного сайта, создание web сайта, сделать сайт, сделать сайт-визитку, сколько стоит создание сайта, размещение сайта, разработка сайта студия,
+    создание сайта компании, обслуживание сайта, восстановить сайт,  редизайн сайта логотип баннер, редизайн, редизайн верстка, web design, design studio, web site design, website design,
+    ecommerce web site design, professional web design, web design company, raster design, web page design, logo design, 3d design, создать логотип, разработать логотип, нарисовать логотип,
+    фирменный стиль, корпоративный стиль, стильный дизайн, заказать сайт, где заказать сайт, заказать сайт портфолио, хочу заказать сайт, дешево заказать сайт, сделать сайто недорого,
+    заказать баннер, хостинг, создание сайтов, реклама, услуги, обслуживание компьютеров, обслуживание компьютеров в организации, компьютерная помощь, удаление вирусов, восстановление систем,
+    ремонт компьютеров, сломался компьютер, обучение работе на компьютере, компьютерные курсы, компьютерные курсы для детей, бесплатные компьютерные курсы, компьютерные курсы для взрослых,
+    светодиодные экраны, реклама на светодиодных экранах, уличные светодиодные экраны, купить светодиодный экран"/>
     <meta name="author" content="Codrops"/>
-
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
           integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -139,6 +148,42 @@ defined('_JEXEC') or die;
             -o-animation-delay: 30s;
             -ms-animation-delay: 30s;
             animation-delay: 30s;
+        }
+
+        .cb-slideshow li:nth-child(7) span {
+            background-image: url(/images/counter/7.jpg);
+            -webkit-animation-delay: 36s;
+            -moz-animation-delay: 36s;
+            -o-animation-delay: 36s;
+            -ms-animation-delay: 36s;
+            animation-delay: 36s;
+        }
+
+        .cb-slideshow li:nth-child(8) span {
+            background-image: url(/images/counter/8.jpg);
+            -webkit-animation-delay: 42s;
+            -moz-animation-delay: 42s;
+            -o-animation-delay: 42s;
+            -ms-animation-delay: 42s;
+            animation-delay: 42s;
+        }
+
+        .cb-slideshow li:nth-child(9) span {
+            background-image: url(/images/counter/9.jpg);
+            -webkit-animation-delay: 48s;
+            -moz-animation-delay: 48s;
+            -o-animation-delay: 48s;
+            -ms-animation-delay: 48s;
+            animation-delay: 48s;
+        }
+
+        .cb-slideshow li:nth-child(10) span {
+            background-image: url(/images/counter/13.jpg);
+            -webkit-animation-delay: 54s;
+            -moz-animation-delay: 54s;
+            -o-animation-delay: 54s;
+            -ms-animation-delay: 54s;
+            animation-delay: 54s;
         }
 
         @-webkit-keyframes imageAnimation {
@@ -279,7 +324,7 @@ defined('_JEXEC') or die;
             font-size: .938em;
             text-transform: lowercase;
             font-style: italic;
-            padding: 2em 0 1.5em 0;
+            padding: 1.8em 0 1.2em 0;
             margin: 0;
             border-top: 2px solid rgba(255, 255, 255, .2);
             border-bottom: 2px solid rgba(255, 255, 255, .2)
@@ -334,20 +379,21 @@ defined('_JEXEC') or die;
             height: 100%;
             z-index: 1000;
             overflow: hidden;
+            -webkit-transition: all .4s;
+            transition: all .4s;
         }
 
         .slide__overlay {
             position: absolute;
             top: 0;
-            bottom: 0;
             left: 0;
-            min-height: 1000px;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
             transition: opacity 0.2s 0.5s, -webkit-transform 0.5s 0.5s;
             transition: transform 0.5s 0.5s, opacity 0.2s 0.5s;
             transition: transform 0.5s 0.5s, opacity 0.2s 0.5s, -webkit-transform 0.5s 0.5s;
             will-change: transform, opacity;
-            -webkit-transform: translate3d(-20%, 0, 0);
-            transform: translate3d(-20%, 0, 0);
         }
 
         @media (max-width: 991px) {
@@ -483,15 +529,15 @@ defined('_JEXEC') or die;
 
         .social_links li a {
             display: block;
-            padding: 6px 6px 6px 6px;
+            padding: 4px 6px 6px 6px;
             margin: 5px;
             color: white;
             width: 30px;
-            height: 30px;
+            height: 32px;
             border: 1px solid black;
             background-color: black;
             opacity: .6;
-            border-radius: 205px;
+            border-radius: 25px;
             font-size: 24px;
             text-align: center;
             transition: all 0.5s;
@@ -551,30 +597,37 @@ defined('_JEXEC') or die;
             background-color: #6fda44;
             border-color: #6fda44;
         }
+
         .social_links li a.go:hover {
             background-color: #dc4c41;
             border-color: #dc4c41;
+        }
+
+        .social_links li a.bi:hover {
+            background-color: #fff;
+            border-color: #fff;
+            color: #0bbbef;
         }
 
         .social_links li a:hover {
             opacity: 1;
         }
 
-        @media (max-width: 605px) {
+        @media (max-width: 716px) {
             .social_links {
-                max-width: 350px;
+                max-width: 380px;
             }
         }
 
-         @media (max-width: 340px) {
+        @media (max-width: 400px) {
 
             .social_links li a {
                 display: block;
-                padding: 3px 3px 3px 3px;
+                padding: 2px 3px 3px 3px;
                 margin: 3px;
                 color: white;
                 width: 20px;
-                height: 20px;
+                height: 21px;
                 border: 1px solid black;
                 background-color: black;
                 opacity: .6;
@@ -585,18 +638,90 @@ defined('_JEXEC') or die;
             }
         }
 
+        .counters {
+            position: absolute;
+            left: 3px;
+            bottom: 0;
+            witdh: 300px;
+            height: 18px;
+        }
+
+        #map {
+            position: absolute;
+            z-index: 5000;
+            left: 0px;
+            top: 45%;
+            width: 35px;
+            height: 35px;
+            padding: 4px 6px 6px 6px;
+            border-bottom-right-radius: 8px;
+            border-top-right-radius: 8px;
+            background-color: white;
+            color: #000;
+            font-size: 16px;
+        }
+
+        .perspective {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Modal view */
+        .perspective.modalview {
+            position: fixed;
+            -webkit-perspective: 1500px;
+            perspective: 1500px;
+        }
+
+        /* Effect airbnb */
+        .effect-airbnb .container {
+            -webkit-transition: -webkit-transform 0.4s;
+            transition: transform 0.4s;
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+        }
+
+        .effect-airbnb.animate .container {
+            -webkit-transform: translateZ(-1500px) translateX(100%) rotateY(-85deg);
+            transform: translateZ(-1500px) translateX(100%) rotateY(-85deg);
+        }
+
+        .effect-airbnb.animate .slide__content {
+            left: -100%;
+        }
+
+        .no-csstransforms3d .effect-airbnb.animate .container {
+            left: 75%;
+        }
+
+        #yandexmap {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
     </style>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
-<body id="page">
-<ul class="cb-slideshow">
+<body id="page" class="perspective effect-airbnb">
+
+<div id="yandexmap"></div>
+
+<ul class="cb-slideshow container">
     <li><span>Image 01</span></li>
     <li><span>Image 02</span></li>
     <li><span>Image 03</span></li>
     <li><span>Image 04</span></li>
     <li><span>Image 05</span></li>
     <li><span>Image 06</span></li>
+    <li><span>Image 07</span></li>
+    <li><span>Image 08</span></li>
+    <li><span>Image 09</span></li>
+    <li><span>Image 10</span></li>
 </ul>
 
 <ul class="social_links">
@@ -604,20 +729,21 @@ defined('_JEXEC') or die;
     <li><a href="https://bitbucket.org/greenkeyschool/" class="bb"><i class="fab fa-bitbucket"></i></a></li>
     <li><a href="https://github.com/greenkey-m" class="gh"><i class="fab fa-github-alt"></i></a></li>
     <li><a href="https://templatemonster.com" class="tm"><i class="fab fa-optin-monster"></i></a></li>
+    <li><a href="https://greenkey.bitrix24.ru" class="bi"><i class="far fa-clock"></i></a></li>
     <li><a href="https://plus.google.com/105646816264008898254" class="go"><i class="fab fa-google-plus-g"></i></a></li>
     <li><a href="https://ok.ru/group/53872013410478" class="ok"><i class="fab fa-odnoklassniki"></i></a></li>
     <li><a href="https://www.facebook.com/matt.ru.395" class="fb"><i class="fab fa-facebook-f"></i></a></li>
     <li><a href="skype: M_e_r_l_e" class="sk"><i class="fab fa-skype"></i></a></li>
-    <li><a href="" class="wa"><i class="fab fa-whatsapp"></i></a></li>
-    <li><a href="" class="vb"><i class="fab fa-viber"></i></a></li>
-    <li><a href="" class="tg"><i class="fab fa-telegram-plane"></i></a></li>
+    <li><a href="whatsapp://send?phone=79106005999" class="wa"><i class="fab fa-whatsapp"></i></a></li>
+    <li><a href="viber://chat?+79106005999" class="vb"><i class="fab fa-viber"></i></a></li>
+    <li><a href="http://t-do.ru/greenkeystudio" class="tg"><i class="fab fa-telegram-plane"></i></a></li>
     <li><a href="https://vk.com/greenkeystudio" class="vk"><i class="fab fa-vk"></i></a></li>
 </ul>
 
 
 <div class="slide__content">
-    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-        <path class="slide__overlay-path" d="M0,0 320,0 450,405 0,405"/>
+    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMidYMid slice">
+        <path class="slide__overlay-path" d="M0,0 250,0 360,405 0,405"/>
     </svg>
     <div class="slide__text">
         <img class="logo" src="/images/logo/logo_full_small.png"/>
@@ -636,53 +762,94 @@ defined('_JEXEC') or die;
     </div>
 
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122190129-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    <div class="counters">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122190129-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
 
-        gtag('config', 'UA-122190129-1');
-    </script>
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
+            gtag('js', new Date());
+
+            gtag('config', 'UA-122190129-1');
+        </script>
 
 
-    <!-- Yandex.Metrika informer -->
-    <a href="https://metrika.yandex.ru/stat/?id=30842581&amp;from=informer"
-       target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/30842581/1_0_FFFFECFF_FFFFCCFF_0_pageviews"
-                                           style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры)" class="ym-advanced-informer" data-cid="30842581" data-lang="ru" /></a>
-    <!-- /Yandex.Metrika informer -->
+        <!-- Yandex.Metrika informer -->
+        <a href="https://metrika.yandex.ru/stat/?id=30842581&amp;from=informer"
+           target="_blank" rel="nofollow"><img
+                    src="https://informer.yandex.ru/informer/30842581/1_0_FFFFECFF_FFFFCCFF_0_pageviews"
+                    style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика"
+                    title="Яндекс.Метрика: данные за сегодня (просмотры)" class="ym-advanced-informer"
+                    data-cid="30842581" data-lang="ru"/></a>
+        <!-- /Yandex.Metrika informer -->
 
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-        (function (d, w, c) {
-            (w[c] = w[c] || []).push(function() {
-                try {
-                    w.yaCounter30842581 = new Ya.Metrika2({
-                        id:30842581,
-                        clickmap:true,
-                        trackLinks:true,
-                        accurateTrackBounce:true,
-                        webvisor:true
-                    });
-                } catch(e) { }
-            });
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function (d, w, c) {
+                (w[c] = w[c] || []).push(function () {
+                    try {
+                        w.yaCounter30842581 = new Ya.Metrika2({
+                            id: 30842581,
+                            clickmap: true,
+                            trackLinks: true,
+                            accurateTrackBounce: true,
+                            webvisor: true
+                        });
+                    } catch (e) {
+                    }
+                });
 
-            var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://mc.yandex.ru/metrika/tag.js";
+                var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () {
+                        n.parentNode.insertBefore(s, n);
+                    };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = "https://mc.yandex.ru/metrika/tag.js";
 
-            if (w.opera == "[object Opera]") {
-                d.addEventListener("DOMContentLoaded", f, false);
-            } else { f(); }
-        })(document, window, "yandex_metrika_callbacks2");
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/30842581" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else {
+                    f();
+                }
+            })(document, window, "yandex_metrika_callbacks2");
+        </script>
+        <noscript>
+            <div><img src="https://mc.yandex.ru/watch/30842581" style="position:absolute; left:-9999px;" alt=""/></div>
+        </noscript>
+        <!-- /Yandex.Metrika counter -->
 
+        <h1 style="font-size:18px; margin-top: 15px;">Школа-студия Greenkey: программирование, создание/разработка
+            сайтов и программ, дизайн, реклама, рекламные ролики.
+            Обслуживание компьютеров для физлиц и организаций, хостинг и администрирование сайтов. Компьютерные курсы
+            для детей и взрослых. Светодиодные уличные экраны.
+            Полиграфическая продукция, печать. Web дизайн портфолио, сайт визитка, web дизайн, web дизайн корпоративных
+            сайтов, лучший web дизайн, web дизайн услуги,
+            html, дизайн web страниц, разработка фирменного стиля, разработка корпоративного стиля, анимация и дизайн,
+            создание роликов, рекламных баннеров, рекламные ролики, видеоролик, цена ролик сайт дизайн, виртуальный тур,
+            создание виртуального 3d тура, заказать виртуальный тур, виртуальный тур недорого, виртуальная панорама,
+            Малоярославец, Обнинск, Жуков, Боровск, Балабаново, Калужская область,
+            создание корпоративного сайта, создание мобильного сайта, создание web сайта, сделать сайт, сделать
+            сайт-визитку, сколько стоит создание сайта, размещение сайта, разработка сайта студия,
+            создание сайта компании, обслуживание сайта, восстановить сайт, редизайн сайта логотип баннер, редизайн,
+            редизайн верстка, web design, design studio, web site design, website design,
+            ecommerce web site design, professional web design, web design company, raster design, web page design, logo
+            design, 3d design, создать логотип, разработать логотип, нарисовать логотип,
+            фирменный стиль, корпоративный стиль, стильный дизайн, заказать сайт, где заказать сайт, заказать сайт
+            портфолио, хочу заказать сайт, дешево заказать сайт, сделать сайто недорого,
+            заказать баннер, хостинг, создание сайтов, реклама, услуги, обслуживание компьютеров, обслуживание
+            компьютеров в организации, компьютерная помощь, удаление вирусов, восстановление систем,
+            ремонт компьютеров, сломался компьютер, обучение работе на компьютере, компьютерные курсы, компьютерные
+            курсы для детей, бесплатные компьютерные курсы, компьютерные курсы для взрослых,
+            светодиодные экраны, реклама на светодиодных экранах, уличные светодиодные экраны, купить светодиодный
+            экран, вы хотите создать свой сайт, каталог, магазин в интернете? вам нужна реклама?</h1>
+
+    </div>
 
     <!-- RedConnect -->
     <script id="rhlpscrtg" type="text/javascript" charset="utf-8" async="async"
@@ -693,6 +860,7 @@ defined('_JEXEC') or die;
 
 </div>
 
+<button id="map"><i class="fas fa-map-marked-alt"></i></button>
 
 <!--script at the bottom for the countdown -->
 <?php if ($countdown == 1) : ?>
@@ -703,10 +871,126 @@ defined('_JEXEC') or die;
                     + '<span class="countdown_section"><span class="countdown_amount">%D</span><br> <?php echo JText::_('PLG_SYSTEM_HARAKA_COUNTDOWN_DAYS'); ?> </span> '
                     + '<span class="countdown_section"><span class="countdown_amount">%H</span><br> <?php echo JText::_('PLG_SYSTEM_HARAKA_COUNTDOWN_HRS'); ?> </span> '
                     + '<span class="countdown_section"><span class="countdown_amount">%M</span><br> <?php echo JText::_('PLG_SYSTEM_HARAKA_COUNTDOWN_MINS'); ?> </span> '
-                    + '<span class="countdown_section"><span class="countdown_amount">%S</span><br> <?php echo JText::_('PLG_SYSTEM_HARAKA_COUNTDOWN_MINS'); ?> </span>'));
+                    + '<span class="countdown_section"><span class="countdown_amount">%S</span><br> <?php echo JText::_('PLG_SYSTEM_HARAKA_COUNTDOWN_SEC'); ?> </span>'));
             });
     </script>
 <?php endif; ?>
+
+<script>
+    $(document).ready(function () {
+        $("#map").click(function () {
+            $('.perspective').toggleClass("modalview").toggleClass("animate");
+        })
+    });
+
+    ymaps.ready(init);
+    function init(){
+        // Создание карты.
+        var myMap = new ymaps.Map("yandexmap", {
+            center: [55.012363, 36.467184],
+            zoom: 17
+        });
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            panoLayer: 'yandex#panorama',
+            hintContent: 'Greenkey, школа-студия: ул. Кутузова 28, оф.4',
+        }, {
+            preset: 'islands#nightIcon',
+            openEmptyBalloon: true,
+            balloonPanelMaxMapArea: 0,
+
+            iconLayout: 'default#image',
+            iconImageHref: '/images/marker.png',
+            iconImageSize: [44, 48],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-22, -48]
+        });
+
+
+        // Функция, устанавливающая для метки макет содержимого ее балуна.
+        function setBalloonContentLayout (placemark, panorama) {
+            // Создание макета содержимого балуна.
+            var BalloonContentLayout = ymaps.templateLayoutFactory.createClass(
+                '<div id="panorama" style="width:256px;height:156px"></div>', {
+                    // Переопределяем функцию build, чтобы при формировании макета
+                    // создавать в нем плеер панорам.
+                    build: function () {
+                        // Сначала вызываем метод build родительского класса.
+                        BalloonContentLayout.superclass.build.call(this);
+                        // Добавляем плеер панорам в содержимое балуна.
+                        this._openPanorama();
+                    },
+                    // Аналогично переопределяем функцию clear, чтобы удалять
+                    // плеер панорам при удалении макета с карты.
+                    clear: function () {
+                        this._destroyPanoramaPlayer();
+                        BalloonContentLayout.superclass.clear.call(this);
+                    },
+                    // Добавление плеера панорам.
+                    _openPanorama: function () {
+                        if (!this._panoramaPlayer) {
+                            // Получаем контейнер, в котором будет размещаться наша панорама.
+                            var el = this.getParentElement().querySelector('#panorama');
+                            this._panoramaPlayer = new ymaps.panorama.Player(el, panorama, {
+                                controls: ['panoramaName']
+                            });
+                        }
+                    },
+                    // Удаление плеера панорамы.
+                    _destroyPanoramaPlayer: function () {
+                        if (this._panoramaPlayer) {
+                            this._panoramaPlayer.destroy();
+                            this._panoramaPlayer = null;
+                        }
+                    }
+                });
+            // Устанавливаем созданный макет в опции метки.
+            placemark.options.set('balloonContentLayout', BalloonContentLayout);
+        }
+
+        // В этой функции выполняем проверку на наличие панорамы в данной точке.
+        // Если панорама нашлась, то устанавливаем для балуна макет с этой панорамой,
+        // в противном случае задаем для балуна простое текстовое содержимое.
+        function requestForPanorama (e) {
+            var placemark = e.get('target'),
+                // Координаты точки, для которой будем запрашивать панораму.
+                coords = placemark.geometry.getCoordinates(),
+                // Тип панорамы (воздушная или наземная).
+                panoLayer = placemark.properties.get('panoLayer');
+
+            placemark.properties.set('balloonContent', "Идет проверка на наличие панорамы...");
+
+            // Запрашиваем объект панорамы.
+            ymaps.panorama.locate(coords, {
+                layer: panoLayer
+            }).then(
+                function (panoramas) {
+                    if (panoramas.length) {
+                        // Устанавливаем для балуна макет, содержащий найденную панораму.
+                        setBalloonContentLayout(placemark, panoramas[0]);
+                    } else {
+                        // Если панорам не нашлось, задаем
+                        // в содержимом балуна простой текст.
+                        placemark.properties.set('balloonContent', "Для данной точки панорамы нет.");
+                    }
+                },
+                function (err) {
+                    placemark.properties.set('balloonContent',
+                        "При попытке открыть панораму произошла ошибка: " + err.toString());
+                }
+            );
+        }
+
+        // Слушаем на метках событие 'balloonopen': как только балун будет впервые открыт,
+        // выполняем проверку на наличие панорамы в данной точке и в случае успеха создаем
+        // макет с найденной панорамой.
+        // Событие открытия балуна будем слушать только один раз.
+        myPlacemark.events.once('balloonopen', requestForPanorama);
+
+
+        myMap.geoObjects.add(myPlacemark);
+    }
+</script>
 
 </body>
 </html>
