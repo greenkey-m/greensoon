@@ -651,14 +651,16 @@ defined('_JEXEC') or die;
             z-index: 5000;
             left: 0px;
             top: 45%;
-            width: 35px;
-            height: 35px;
+            width: 45px;
+            height: 45px;
             padding: 4px 6px 6px 6px;
-            border-bottom-right-radius: 8px;
-            border-top-right-radius: 8px;
+            border-bottom-right-radius: 23px;
+            border-top-right-radius: 23px;
+            border: none;
             background-color: white;
             color: #000;
-            font-size: 16px;
+            font-size: 24px;
+            cursor: pointer;
         }
 
         .perspective {
